@@ -2,234 +2,331 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-    <link rel="icon" type="./image/logos.jpg" href="./image/logos.jpg">
-    <title> Coffee Shop </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coffee Shop</title>
+  <!-- main css -->
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- font awesome -->
+  <script src="js/all.js"></script>
 </head>
+
 <body>
-    <!-- Navebar start  -->
- <header>
- <div class="logo">
-  <a href=""><img src="./image/logos.jpg" alt=""></a>
- </div>
- <nav class="navbar">
-  <a class="active" href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-  <a href="menu.html">Menu</a>
-  <a href="product.html">Product</a>
-  <a href="contact.html">Contact</a>
- </nav>
- <div class="icon">
- <i class="fas fa-bars" id="menu-bars"></i>
- <i class="fas fa-search" id="search-icon"></i>
- <!-- <a href="#" class="fas fa-heart"></a>
- <a href="#" class="fas fa-shopping-cart"></a> -->
- </div>
-</header>
-<!-- Navebar end  -->
+  <!-- preloader -->
+  <div class="preloader">
+    <img src="img/preloader.gif" alt="preloader" class="preloader__item">
+  </div>
 
-<!-- search form  -->
-<form action="" id="search-form">
-    <input type="serach" placeholder="search here..." name="" id="search-box">
-    <label for="search-box" class="fas fa-search"></label>
-    <i class="fas fa-times" id="close"></i>
-</form>
 
-<!-- home section start  -->
-<div class="home-bg">
-    <section class="home" id="home">
-        <div class="content">
-            <h3>coffee heaven</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio reprehenderit harum neque fugit, ad error.</p>
-        <a href="#" class="btn">Enjoy</a>
-        </div>
-    </section>
-</div>
-<!-- home section nd -->
-<!-- about section start  -->
-<h1 class="heading"><span>About </span>Us</h1>
-<div class="about" id="about">
-<div class="image">
-    <img src="./image/abouts.webp" alt="">
-</div>
-<div class="content">
-    <h3>cup of coffee can complete your day</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugit dignissimos accusantium sit, non voluptate?</p>
-    <a href="#" class="btn">Learn More</a>
-</div>
-</div>
-<!-- about section end  -->
-<!-- menu section start  -->
-<section class="menu" id="menu">
-    <h1 class="heading">our <span>menu</span></h1>
-    <div class="box-container">
-        <div class="box">
-            <img src="./image/menu1.webp" alt="">
-            <h3>Americano Coffee</h3>
-            <div class="price">$15.9</div>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
-        <div class="box">
-            <img src="./image/menu2.webp" alt="">
-            <h3>Cortado Coffee</h3>
-            <div class="price">$15.9</div>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
-        <div class="box">
-            <img src="./image/menu3.webp" alt="">
-            <h3>Mocha Coffee</h3>
-            <div class="price">$15.9</div>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
-        <div class="box">
-            <img src="./image/menu4.webp" alt="">
-            <h3>Macchiato Coffee</h3>
-            <div class="price">$15.9</div>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
-        <div class="box">
-            <img src="./image/menu5.jpg" alt="">
-            <h3>Cappuccino Coffee</h3>
-            <div class="price">$15.9</div>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
-        <div class="box">
-            <img src="./image/menu6.webp" alt="">
-            <h3>Iced Coffee Coffee</h3>
-            <div class="price">$15.9</div>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
-       
+
+  <!-- end preloader -->
+  <!-- header -->
+  <header class="header" id="header">
+    <!-- bannar -->
+    <div class="bannar">
+      <h1 class="bannar__title bell-fonts">coffee junkie </h1>
+      <div class="bannar__icons">
+        <a href="#" class="bannar__social-icon">
+          <i class="fab fa-facebook fa-fw"></i>
+        </a>
+        <a href="#" class="bannar__social-icon">
+          <i class="fab fa-twitter fa-fw"></i>
+        </a>
+        <a href="#" class="bannar__social-icon">
+          <i class="fab fa-instagram fa-fw"></i>
+        </a>
+        <a href="#" class="bannar__social-icon">
+          <i class="fab fa-google-plus fa-fw "></i>
+        </a>
+      </div>
     </div>
-</section>
-<!-- menu section end -->
-<!-- product section start  -->
-<section class="product" id="product">
-    <h1 class="heading">Our <span>Product</span></h1>
-    <div class="box-container">
-        <div class="box">
-            <div class="icon">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="image">
-                <img class="img1" src="./image/p1.jpg" alt="">
-                <h3>Fresh Coffee</h3>
-            </div>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <div class="price">
-                15.99
-            </div>
-        </div>
-        <div class="box">
-            <div class="icon">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="image">
-                <img src="./image/p2.jpg" alt="">
-                <h3>Fresh Coffee</h3>
-            </div>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <div class="price">
-                15.99
-            </div>
-        </div>
-        <div class="box">
-            <div class="icon">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="image">
-                <img src="./image/p3.jpg" alt="">
-                <h3>Fresh Coffee</h3>
-            </div>
-            
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <div class="price">
-                15.99
-            </div>
-        </div>
+    <!--end bannar -->
+
+    <!-- video -->
+    <article class=" video__container">
+      <video class="video__item" autoplay muted loop>
+        <source src="video/coffee.mp4" type="video/mp4">
+        <source src="video/coffee.ogv" type="video/ogv">
+        <source src="video/coffee.webm" type="video/webm">
+        Your browser does not support video
+
+      </video>
+    </article>
+
+    <!-- end video -->
+    <div class="navBtn"><i class="fas fa-bars"></i></div>
+    <!-- nav -->
+    <div class="nav">
+      <ul class="nav__links">
+        <!-- logo -->
+        <li><a href="#" class="nav__single-link nav__logo">
+            <img src="img/navLogo.svg" alt="">
+          </a>
+        </li>
+        <li><a href="#header" class="nav__single-link">home</a></li>
+        <li><a href="#about" class="nav__single-link">about</a></li>
+        <li><a href="#drink" class="nav__single-link">free drink</a></li>
+        <li><a href="#work" class="nav__single-link">work</a></li>
+        <li><a href="#contact" class="nav__single-link">contact</a></li>
+      </ul>
     </div>
-</section>
-<!-- product section end -->
-<!-- contact start  -->
-<section class="contact" id="contact">
-    <h1 class="heading">Contact <span>Us</span></h1>
-    <div class="row">
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28941.97056203084!2d67.02430562985477!3d24.940710490734403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f8014fe5943%3A0x11df7a65effb1ef6!2sNorth%20Nazimabad%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1680278259176!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <form action="">
-    
-            <div class="inputbox">
-                <span class="fas fa-user"></span>
-                <input type="text" placeholder="name">
-            </div>
-            <div class="inputbox">
-                <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="email">
-            </div>
-            <div class="inputbox">
-                <span class="fas fa-phone"></span>
-                <input type="" placeholder="number">
-            </div>
-            <input type="submit" value="contact now" class="btn">
-        </form>
+    <!--end nav -->
+    <!-- video switch -->
+    <div class="video__switch-container">
+      <div class="video__switch">
+        <span>on</span>
+        <span>off</span>
+        <div class="video__switch-btn"> </div>
+      </div>
     </div>
-    
-</section>
-<!-- contact end -->
-<!-- footer section start  -->
-<section class="footer">
-   <div class="box-container">
-    <div class="box">
-        <img src="./image/address.png" alt="">
-        <h3>address</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-       </div>
-       <div class="box">
-        <img src="./image/mail.png" alt="">
-        <h3>email</h3>
-        <a class="link" href="#">xyz@gmail.com</a>
-       </div>
-       <div class="box">
-        <img src="./image/call.png" alt="">
-        <h3>call us</h3>
-        <p>+92 342 678945</p>
-       </div>
-       <div class="box">
-        <img src="./image/open.png" alt="">
-        <h3>opening hours</h3>
-        <p>Monday - Friday: 8:00 AM to 10:00 PM
-           <br> saturday 8:00 AM to 11:00 PM </p>
-       </div>
-   </div>
-   <div class="credit">
-    Created by <span>Syeda  Nosheen</span>
-   </div>
-</section>
-<!-- footer section end -->
+    <!--end video swtich -->
+  </header>
+
+  <!--end header -->
+
+
+  <!-- about -->
+  <section class="about section-padding" id="about">
+    <div class="grid-container grid-container--medium-2">
+      <!-- about container -->
+      <article class="about-container">
+        <!-- first child -->
+        <div class="section-title">
+          <h1 class="section-title__name bell-fonts">our story</h1>
+          <div class="section-title__underline"></div>
+          <p class="section-title__text">To make a drink from coffee beans, the beans must first
+            be specially prepared by drying the beans and then roasting. The beans are dried
+            a short time after they are picked. This preserves them and makes
+            them ready to be packed or roasted.
+            they must be roasted
+          </p>
+        </div>
+        <!-- second child -->
+        <div class="about__img  ">
+          <img src="img/aboutImg-1.jpeg" class="about__img-item" alt="about-img">
+        </div>
+      </article>
+      <!-- end of about container -->
+      <!-- about container -->
+      <article class="about-container">
+        <!-- first child -->
+        <div class="section-title">
+          <h1 class="section-title__name bell-fonts">what we do</h1>
+          <div class="section-title__underline"></div>
+          <p class="section-title__text">Coffee is a plant (Coffea) and the name of the drink
+            that is made from this plant. The coffee plant is a bush or tree that can grow
+            up to ten meters (about 32 feet) high, but is usually cut shorter. Coffee plants
+            originally grew in Africa, and now also grow in South America,</p>
+        </div>
+        <!-- second child -->
+        <div class="about__img about__img-special">
+          <img src="img/aboutImg-2.jpeg" class="about__img-item" alt="about-img">
+        </div>
+      </article>
+      <!-- end of about container -->
+    </div>
+  </section>
+  <!-- end of about -->
+
+  <!-- drink section -->
+  <section class="drink section-padding " id="drink">
+    <div class="grid-container">
+      <!-- first item -->
+      <form class="drink-form">
+        <p class="drink-form__feedback">some text</p>
+        <h3 class="drink-form__title bell-fonts">to get free drinks</h3>
+        <div class="drink-form__input">
+          <input type="text" id="" maxlength="15" class="input-name" placeholder="name">
+        </div>
+        <div class="drink-form__input">
+          <input type="text" id="" maxlength="15" class="input-lastname" placeholder="last name">
+        </div>
+        <div class="drink-form__input">
+          <input type="email" id="" maxlength="15" class="input-email" placeholder="email">
+        </div>
+        <input type="submit" value="sign up" class="input-submit">
+      </form>
+
+
+      <!--second item -->
+      <article class="drink-card">
+        <h3 class="drink-card__title bell-fonts">lucky people</h3>
+        <div class="drink-card__list">
+          <!-- <div class="person">
+        <img src="/img/person-1.jpeg" alt="person" class="person__thumbnail">
+        <h4 class="person__name">john</h4>
+        <h4 class="person__name">doe</h4>
+      </div> -->
+
+          <!-- <div class="person">
+        <img src="/img/person-1.jpeg" alt="person" class="person__thumbnail">
+        <h4 class="person__name">john</h4>
+        <h4 class="person__name">doe</h4>
+      </div> -->
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- work -->
+
+  <section class="work section-padding" id="work">
+    <!-- section title -->
+    <div class="section-title section-title--left">
+      <h1 class="section-title__name bell-fonts">our work</h1>
+      <div class="section-title__underline"></div>
+    </div>
+    <!-- end of section title -->
+    <div class="work-container">
+      <!-- single work item -->
+      <article class="work-item item-1">
+        <img src="img/work-1.jpeg" alt="" class="work-item__img">
+        <a href="#" class="work-item__icon" data-id="1">
+          <i class="fas fa-search"></i>
+        </a>
+      </article>
+      <!-- end single work item -->
+      <!-- single work item -->
+      <article class="work-item item-2">
+        <img src="img/work-2.jpeg" alt="" class="work-item__img">
+        <a href="#" class="work-item__icon" data-id="2">
+          <i class="fas fa-search"></i>
+        </a>
+      </article>
+      <!-- end single work item -->
+      <!-- single work item -->
+      <article class="work-item item-3">
+        <img src="img/work-3.jpeg" alt="" class="work-item__img">
+        <a href="#" class="work-item__icon" data-id="3">
+          <i class="fas fa-search"></i>
+        </a>
+      </article>
+      <!-- end single work item -->
+      <!-- single work item -->
+      <article class="work-item item-4">
+        <img src="img/work-4.jpeg" alt="" class="work-item__img">
+        <a href="#" class="work-item__icon" data-id="4">
+          <i class="fas fa-search"></i>
+        </a>
+      </article>
+      <!-- end single work item -->
+      <!-- single work item -->
+      <article class="work-item item-5">
+        <img src="img/work-5.jpeg" alt="" class="work-item__img">
+        <a href="#" class="work-item__icon" data-id="5">
+          <i class="fas fa-search"></i>
+        </a>
+      </article>
+      <!-- end single work item -->
+      <!-- single work item -->
+      <article class="work-item item-6">
+        <img src="img/work-6.jpeg" alt="" class="work-item__img">
+        <a href="#" class="work-item__icon" data-id="6">
+          <i class="fas fa-search"></i>
+        </a>
+      </article>
+      <!-- end single work item -->
+      <!-- single work item -->
+      <article class="work-item item-7">
+        <img src="img/work-7.jpeg" alt="" class="work-item__img">
+        <a href="#" class="work-item__icon" data-id="7">
+          <i class="fas fa-search"></i>
+        </a>
+      </article>
+      <!-- end single work item -->
+      <!-- single work item -->
+      <article class="work-item item-8">
+        <img src="img/work-8.jpeg" alt="" class="work-item__img">
+        <a href="#" class="work-item__icon" data-id="8">
+          <i class="fas fa-search"></i>
+        </a>
+      </article>
+      <!-- end single work item -->
+      <!-- single work item -->
+      <article class="work-item item-9">
+        <img src="img/work-9.jpeg" alt="" class="work-item__img">
+        <a href="#" class="work-item__icon" data-id="9">
+          <i class="fas fa-search"></i>
+        </a>
+      </article>
+      <!-- end single work item -->
+    </div>
+    <!-- modal -->
+    <div class="work-modal">
+      <div class="work-modal__item"></div>
+      <div class="work-modal__close">
+        <i class="fas fa-window-close"></i>
+      </div>
+    </div>
+  </section>
+  <!-- end of work -->
+
+  <!-- contact -->
+  <section class="contact section-padding" id="contact">
+    <!-- section title -->
+    <!-- section title -->
+
+    <!-- section title -->
+    <div class="section-title section-title--left">
+      <h1 class="section-title__name bell-fonts">contact us</h1>
+      <div class="section-title__underline"></div>
+    </div>
+    <!-- end of section title -->
+
+    <div class="contact-container">
+      <iframe class="contact-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30606552126!2d-73.69948725009326!3d40.69714939692116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z2YbZitmI2YrZiNix2YPYjCDYp9mE2YjZhNin2YrYp9iqINin2YTZhdiq2K3Yr9ip!5e0!3m2!1sar!2ssa!4v1619270195364!5m2!1sar!2ssa"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="contact-info">
+
+        <!-- single contact item -->
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <i class="fas fa-map-pin"></i>
+          </div>
+          <h2 class="contact-item__title">address</h2>
+          <p class="contact-item__text">3213 w cofee street, san diego</p>
+        </div>
+        <!-- end single contact item -->
+
+        <!-- single contact item -->
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <h2 class="contact-item__title">support</h2>
+          <p class="contact-item__text"> <span><i class="fas fa-phone"></i>
+            </span>
+            +123 456 789
+          </p>
+
+          <p class="contact-item__text"> <span><i class="fas fa-envelope"></i>
+            </span>
+            email@email.com
+
+          </p>
+        </div>
+        <!-- end single contact item -->
+
+        <!-- single contact item -->
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h2 class="contact-item__title">time work</h2>
+          <p class="contact-item__text">moday - friday 8.00Pm - 8.00Am </p>
+          <p class="contact-item__text">saturday - sunday 9.00Am - 9.00Pm </p>
+        </div>
+        <!-- end single contact item -->
+      </div>
+    </div>
+
+  </section>
+
+  <script src="js/app.js"></script>
 </body>
-<script src="./JS/Script.js"></script>
+
 </html>
